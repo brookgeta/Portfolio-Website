@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #030508;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: 'Playfair Display',
+        serif;
+    font-size: 59px;
+    color: rgb(204, 207, 197);
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  p {
+      color: #d2d2d2;
+  }
+
+  .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 5%;
+  }
+
+  form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 20px 0;
+  }
+
+  input, textarea, label {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 30%;
+      color: #e7e7e7;
+  }
+
+  input, textarea {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #d4caca;
+  }
+
+  /* input[type=submit] {
+      background-color: #6e737d;
+      padding: 15px 0;
+      color: white;
+      font-size: 18px;
+      border-bottom: none;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: all .3s ease;
+  }
+
+  input[type=submit]:hover {
+      background: #FFF;
+      color: #ced6e1;
+  }
+
+  input,
+  textarea {
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+  }
+
+  input:focus,
+  textarea:focus {
+      outline: 1px solid #828282;
+  } */
+
+  a {
+      color: #7b7878;
+      font-style: italic;
+  }
+
+  a:hover {
+      color: #fff;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+  }
+  
+  nav .left a {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  nav .right a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  nav .right a:last-child {
+    color: #030508;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  nav .right a span {
+    margin-left: 5px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+  }
+  
+  .hero .hero-text {
+    flex: 5;
+  }
+  
+  .hero .hero-text h2 {
+    font-size: 45px;
+  }
+  
+  .hero .hero-text .links {
+    margin-top: 25px;
+  }
+  
+  .hero .hero-text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+  }
+  
+  .hero .hero-text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+  }
+  
+  .skills {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .skills .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skills .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .skills .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  
+  .skills .cells .cell span {
+    font-size: 18px;
+  }
+  
+  .contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  
+  .contact-section h2 {
+    font-size: 35px;
+  }
+  
+  .contact-section .group {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+  }
+  
+  .contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section .group form input,
+  .contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+  }
+  
+  .contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+  }
+  
+  .contact-section .group form button:hover {
+    filter: brightness(.9);
+  }
+  
+  @media (max-width: 850px) {
+    .hero .text h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    .hero {
+      flex-direction: column-reverse;
+    }
+
+    .contact-section .group {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      padding: 0 20px;
+    }
+  
+    nav .right a {
+      font-size: 22px;
+    }
+  
+    nav .right a:last-child {
+      color: var(--text-color);
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    nav .right a span {
+      display: none;
+    }
+  
+    .hero {
+      padding: 0 20px;
+    }
+  
+    .hero .text h2 {
+      font-size: 30px;
+    }
+  
+    .skills {
+      padding: 0 20px;
+    }
+  
+    .skills .cells .cell span {
+      font-size: 16px;
+    }
+    .contact-section {
+      padding: 0 20px;
+    }
+  }
